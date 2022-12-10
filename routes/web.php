@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/darkpan', function () {
+    // return view('welcome');
+    return view('layouts.auth-darkpan');
+});
 
-ROute::get('/login',function(){
+Route::get('/login',function(){
     return view('login');
 });
 
